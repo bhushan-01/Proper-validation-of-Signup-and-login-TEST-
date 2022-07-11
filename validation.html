@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+
+ 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="Container">
+        <div class="header">
+            <h2 >Registration Form </h2>
+        </div>
+        <form class="form" id="form"action="end.html" onsubmit="validate()">
+            <hr>
+            
+            <div class="form-control"onkeyup="validate()">
+                <label>First name</label>
+                <input type="text" name="" id="Firstname" placeholder="Enter your First name " autocomplete="off" onkeypress="return AvoidSpace(event)" >
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error msg</small>
+            </div>
+            <hr>
+            <div class="form-control"onkeyup="validate()">
+                <label>Last name</label>
+                <input type="text" name="" id="Lastname" placeholder="Enter your Last name " autocomplete="off"onkeypress="return AvoidSpace(event)">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error msg</small>
+            </div>
+            <hr>
+            <div class="form-control"onkeyup="validate()">
+                <label>Email</label>
+                <input type="email" name="" id="Email" placeholder="Enter your Valid email id" autocomplete="off"onkeypress="return AvoidSpace(event)">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error msg</small>
+            </div>
+            <hr>
+            <div class="form-control"onkeyup="validate()">
+                <label>Phone number</label>
+                <input type="number" name="" id="Phonenumber" placeholder="Enter your Phone number" autocomplete="off"maxlength="10"onkeypress="return AvoidSpace(event)">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error msg</small>
+            </div>
+            <hr>
+      
+            <div class="form-control"onkeyup="validate()">
+                <label>Password</label>
+                <input type="password" name="" id="Password" placeholder="Enter your Password" autocomplete="off"onkeypress="return AvoidSpace(event)">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error msg</small>
+            </div>
+            <hr>
+            <div class="form-control"onkeyup="validate()">
+                <label>Confirm Password</label>
+                <input type="password" name="" id="ConfirmPassword" placeholder="Enter your Password Again "
+                    autocomplete="off"onkeypress="return AvoidSpace(event)">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Errormsg</small>
+            </div>
+            <hr>
+            <input type="submit" value="Click here to submit" class="button" >
+            <span>Already have a account?</span>
+        <button> <a href="login.html" class="x">Login</a></button>  
+        </form>
+    </div>
+   
+
+
+  
+    <script src="index.js"></script>
+
+</body>
+
+</html>
